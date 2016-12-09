@@ -1,0 +1,381 @@
+/*Importamos Fuentes, Mixins y Variables*/
+@import "fonts";
+@import "mixin";
+@import "variables";
+/*Importamos Bootstrap*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/*Importamos fuentes de google*/
+@import url(https://fonts.googleapis.com/css?family=Mystery+Quest);
+@import url(https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet);
+
+p {
+  font-family: "Mystery Quest", cursive;
+  font-size: 150%;
+}
+
+
+/* Elimina el margin y padding de todas las etiquetas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Fuente del sitio web y fondo negro */
+
+body {
+    background: rgb(3, 0, 40);
+    background-attachment: fixed;
+    font-family: "Mystery Quest", cursive;
+  
+}
+
+
+/* Hace que no quede espacio en la parte de abajo de una imagen */
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Restaura los valores por defecto de la etiqueta p */
+
+p {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+
+/* Hace que la etiqueta a no tenga el subrayado de texto */
+
+a {
+    text-decoration: none;
+}
+
+
+/* Hace que las listas no tengan decoracion */
+
+ul {
+    list-style: none;
+}
+
+
+/* Restaura los valores por defecto de la etiqueta ol */
+
+ol {
+    display: block;
+    margin: 0 15px;
+    padding-left: 0px;
+}
+
+ol li {
+    padding: 5px 10px;
+}
+
+
+/* Titulo del juego */
+
+.banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 50px 10px 8px 10px;
+    background: rgb(3, 0, 40);
+    z-index: 100;
+    font-family: "Mystery Quest", cursive;
+    font-size: 100%;
+    color: rgb(2, 214, 247);
+}
+
+
+/* Titulo del sitio web */
+.bannerT {
+    padding: 50px 10px 8px 10px;
+    background: rgb(3, 0, 40);
+    z-index: 100;
+    color: rgb(2, 214, 247);
+    font-family: "Mystery Quest", cursive;
+    font-size: 150%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* Contenedor para el menu de navegacion, modifica los elementos dentro de li y ul*/
+
+.menu {
+    list-style: none;
+    background: rgb(3, 0, 40);
+    transition: background 1s;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    margin: 0 10%;
+    li {
+        float: left;
+        position: relative;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        
+        ul {
+            height: 0;
+            width: 100%;
+            position: absolute;
+            background: rgba( 0, 0, 0, 0.99);
+            box-shadow: 0px 2px 8px #141414;
+            z-index: 90;
+            font-size: 20px;
+            overflow: hidden;
+        }
+    }
+   
+
+}
+
+/* Crea una linea blanca cuando se pasa el mouse sobre el menu fijo */
+
+.menu >li:hover {
+    border-bottom: 2px solid #eff2f2;
+}
+
+/* Describe el comportamiento de los links en el menu */
+
+.menu-item {
+    display: block;
+    transition: color 1s;
+    color: #0ee1c8;
+    cursor: pointer;
+}
+
+.menu-item:hover,
+.menu-item:active {
+    color: #fff;
+}
+
+.menu li > .menu-item {
+    padding: .5em .9em;
+}
+
+/* Contenedor ara las imágenes de las instrucciones del jugo */
+.content-ins{
+    background: rgb(0, 2, 2);
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+    
+
+}
+
+/* contenedor para la sección de créditos */
+.credits{
+    background: rgb(0, 2, 2);
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+    padding: 
+    opacity: 0;
+    
+}
+/* Modifica el estlo de la tabla y el texto dentro de ella para la seccion de creditos */
+table{
+        border-collapse: collapse;
+        width: 100%;
+         opacity: 1;
+    }
+   
+ th,td{
+        text-align: left;
+        padding: 8px;
+         
+        padding: 0 10px 0 10px;
+        color: #f9fcfb;
+        font-family:'Prociono', serif;
+        font-size: 30px;    
+}
+
+
+/* Cambia las imagenes de las instrucciones del juego al dar click en continuar*/
+.img1 {
+z-index:200;
+margin-top:50px;
+background-image:url(../assets/ins1.jpg);
+width:1069px;
+height:600px;
+}
+.img2 {
+z-index:200;
+margin-top:50px;
+background-image:url(../assets/ins2.JPG);
+width:1069px;
+height:600px;
+}
+
+.img3{
+z-index:200;
+margin-top:50px;
+background-image:url(../assets/ins3.JPG);
+width:1069px;
+height:600px;
+}
+
+/* Imagen de creditos */
+
+.me{
+z-index:200;
+margin-top:50px;
+background-image:url(../assets/yo.png);
+width:711px;
+height:600px;
+}
+
+#animation {
+width:170px;
+height:250px;
+margin-top:200px;
+margin-left:-5px;
+padding: 100px;
+display:none;
+}
+
+
+
+
+/* Pie de pagina */
+
+.footer {
+    color: #0ee1c8;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    background: rgb(3, 0, 40);
+    text-align: center;
+    color: #9b9b9b;
+    font-family: "Mystery Quest", cursive;
+
+    a {
+    padding: 0 10px 0 10px;
+    color: #9b9b9b;
+    font-family: "Mystery Quest", cursive;
+    font-size: 15px;
+    }
+}
+ 
+
+
+/* Cuando se pasa el mouse sobre los links del pie de pagina */
+
+.footer a:hover {
+    color: #0ee1c8;
+}
+
+
+/* Titulo de las paginas */
+
+.title {
+    font-family: "Mystery Quest", cursive;
+    padding: 16px 0 18px 0;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    float: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Contenido de las paginas  background: url(../assets/cielo.gif);*/
+
+.content {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+
+
+/* Contenedor de elementos a mostrar en el contenido de la pagina */
+
+.container {
+    padding: 3% 6%;
+    margin: 0 10%;
+    font-family: 'Slabo 27px', serif;
+    text-align: justify;
+    background-color: rgba( 255, 255, 255, 0.8);
+}
+
+
+/* Contenedor de elementos a mostrar en el contenido de la pagina, este contenedor no tiene margen */
+
+.container-full {
+    padding: 10% 30px;
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+    background-color: rgb(3, 0, 40);
+    
+}
+
+/* Decoracion de la etiqueta -a- cuando esta en un contenedor */
+
+.container a,
+.container a:visited,
+.container a:active {
+    color: #000;
+    transition: color .4s;
+}
+
+.container a:hover {
+    text-decoration: none;
+    color: #0ee1c8;
+}
+
+
+/* Decoracion de la etiqueta -a- cuando esta en una tarjeta horizontal */
+
+.horizontal-card ul li ul a,
+.card ul li ul a {
+    color: #3d3d3d;
+}
+
+
+/* Decoracion de la lista cuando esta en una tarjeta horizontal */
+
+.horizontal-card ul,
+.card ul {
+    display: block;
+    margin: 10px 0;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+
+
+/* Hace que los links para retroceder o avanzar ocupen cada uno la mitad del div */
+
+.arrow-link {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+
+/* Contiene los links con flechas para avanzar o retroceder */
+
+.arrow-link-container {
+    width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+}
+

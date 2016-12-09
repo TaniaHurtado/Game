@@ -1,0 +1,26 @@
+LA CAVERNA MISTERIOSA
+
+1.Contenido
+Esta entrega contiene varias subcarpetas:
+- js: contiene los archivos javascript para manejar el comportamiento de las imágenes
+- phaser: contienen los archivos para incluir la librería de phaser
+- assets: contiene todas las imágenes presentes en el juego asi como el tiled map y el map.json que se usan para mostrar el juego
+- game: tienes todos los archivos .js que se manejan en el juego
+- css: contiene los archivos de estilos utilizados en las paáginas
+
+2. Mapa de navegación
+Al ingresar en la primera página del archivo, index.html se encontrarán las instrucciones para el juego,
+en la parte superior estan los enlaces a la página del juego y a la página de créditos.
+
+3. Desarrollo del juego
+El juego se realizó usando la librería de phaser, con ayuda del tutorial que ofree la página oficial de phaser.
+El mapa del juego fue realizado en Tiled, y usado en el juego como un archivo json.
+
+4. Imágenes y fuentes tomadas de:
+- https://fonts.google.com/
+- https://es.pinterest.com/pin/331577591298362224/
+
+5.Observaciones:
+El juego puede visualizarse mejor usando el navegador Mozilla Firefox 
+
+
